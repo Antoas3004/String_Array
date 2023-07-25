@@ -1,0 +1,19 @@
+public class Remove_Repeat {
+
+	public static void main(String[] args) {
+		String s = "big black bug bit a big black dog on his big black nose";
+
+		String a[] = s.split(" ");
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[i].equals(a[j])) {
+					a[j] = " ";
+				}
+			}
+		}
+		for (String b : a) {
+			System.out.println(b);
+		}
+	}
+}
