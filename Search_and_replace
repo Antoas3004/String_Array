@@ -1,0 +1,24 @@
+public class Search_and_replace {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter Search word : ");
+		String Search = sc.nextLine();
+		System.out.println("enter replace word : ");
+		String replace = sc.nextLine();
+		System.out.println("enter your sentance : ");
+		String s = sc.nextLine();
+
+		String a[] = s.split(" ");
+
+		for (int i = 0; i < a.length; i++) {
+			if (a[i].equalsIgnoreCase(Search)) {
+				a[i] = replace;
+			}
+		}
+		for (String x : a) {
+			System.out.println(x);
+		}
+	}
+}
