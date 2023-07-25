@@ -1,0 +1,26 @@
+public class Occurance_Of_Word {
+
+	public static void main(String[] args) {
+		
+		//Search a word and count word how many time the word present in
+		// the sentance
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter your search word : ");
+		String search = sc.nextLine();
+		System.out.println("enter yout sentance : ");
+		String a = sc.nextLine();
+
+		// String Search = "big";
+		int count = 0;
+		String[] b = a.split(" ");
+
+		for (String x : b) {
+			if (x.equals(search)) {
+				count++;
+			}
+		}
+		System.out.println(count);
+		sc.close();
+	}
+}
