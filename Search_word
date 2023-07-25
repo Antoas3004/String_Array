@@ -1,0 +1,22 @@
+public class Search {
+
+	public static void main(String[] args) {
+		String s = "Auto generated method stub";
+
+		String a[] = s.split(" ");
+
+		String search = "Method";
+
+		boolean flag = false;
+
+		for (int i = 0; i < a.length; i++) {
+			// ignore case (ingnore lower and upper case)
+			// if (a[i].equalsIgnoreCase(search))
+			// check whatever it is
+			if (a[i].equals(search)) {
+				flag = true;
+			}
+		}
+		System.out.println(flag);
+	}
+}
