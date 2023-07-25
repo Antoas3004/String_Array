@@ -1,0 +1,16 @@
+public class Convert {
+
+	public static void main(String[] args) {
+		
+		//Convert String to String array
+		
+		String s="india is my nation";
+		
+		String x[]=s.split(" ");
+		//Split is a method to split the String 
+		
+		for(int i=0;i<x.length;i++) {
+			System.out.println(x[i]);
+		}
+	}
+}
