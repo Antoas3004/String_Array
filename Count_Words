@@ -1,0 +1,14 @@
+public class Count_Words {
+
+	public static void main(String[] args) {
+		String s="Auto generated method stub";
+		
+		String a[]=s.split(" ");
+		
+		//how many words present in th Sring
+		
+		System.out.println(a.length);
+
+	}
+
+}
