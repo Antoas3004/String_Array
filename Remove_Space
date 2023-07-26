@@ -1,0 +1,30 @@
+public class Remove_Space {
+
+	public static void main(String[] args) {
+		String s = "ismail is drafting a mail with smile";
+
+		// method - 1
+		// Change string to char array and copy Char array to another
+		// then put if condition to remove space
+		// then print it space will remove
+
+		char c[] = s.toCharArray();
+
+		for (char a : c) {
+			if (a != 32) {
+				System.out.print(a);
+			}
+		}
+		System.out.println();
+		// Method -2
+		// using split method to split the String
+		// String will be broken into words as split is based on single space
+
+		String x[] = s.split(" ");
+		for (String a : x) {
+			System.out.print(a);
+		}
+	}
+}
+
+//both output : ismailisdraftingamailwithsmile
