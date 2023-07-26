@@ -1,0 +1,28 @@
+public class Find_Duplicate_Word_And_Occurance {
+
+	public static void main(String[] args) {
+
+		String s = "Super Man Bat Man Spider Man";
+
+		String x[] = s.split(" ");
+
+		int count = 0;
+		String Word = "";
+
+		for (int i = 0; i < x.length; i++) {
+			for (int j = i + 1; j < x.length; j++) {
+				if (x[i].equals(x[j])) {
+					x[j] = " ";
+					count++;
+					Word = x[i];
+				}
+				if (j == x.length - 1 && x[i] == Word && x[i] != " ") {
+					System.out.print(x[i] + " = ");
+					System.out.print(count + 1);
+					System.out.println();
+					count = 0;
+				}
+			}
+		}
+	}
+}
