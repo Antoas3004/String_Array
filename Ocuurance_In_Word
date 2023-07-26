@@ -1,0 +1,22 @@
+public class Ocuurance_In_Word {
+
+	public static void main(String[] args) {
+		// find a occurance 'a' in each word in iven String Array
+
+		String str[] = { "aadhavan", "anto", "vidhya", "rahman", "vimal" };
+
+		for (int i = 0; i < str.length; i++) {
+			// String Array to String(String save based ascii value)
+			String s = str[i];
+			// String to char because we Search vaule one by one
+			char c[] = s.toCharArray();
+			int counter = 0;
+			for (char i1 : c) {
+				if (i1 == 'a' || i1 == 'A') {
+					counter++;
+				}
+			}
+			System.out.println(s + "---->" + counter);
+		}
+	}
+}
