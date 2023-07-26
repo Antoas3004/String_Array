@@ -1,0 +1,16 @@
+public class Print_3rd_Element {
+
+	public static void main(String[] args) {
+		String s = "Big black bug bit a big black dog on his big black nose";
+
+		for (int i = 2; i < s.length(); i = i + 3) {
+			System.out.println(s.charAt(i));
+		}
+
+		String a[] = s.split(" ");
+
+		for (int i = 2; i < a.length; i = i + 3) {
+			System.out.println(a[i]);
+		}
+	}
+}
